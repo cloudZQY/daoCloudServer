@@ -1,0 +1,7 @@
+image: daocloud/ci-node:0.12
+
+services:
+    - mongodb
+
+env:
+    - MYENV = "dev"
