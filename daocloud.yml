@@ -1,7 +1,13 @@
-image: daocloud/ci-node:0.12
-
-services:
-    - mongodb
-
-env:
-    - PORT = 80
+version: "2.0"
+test:
+  image: daocloud/ci-node:0.12
+  services:
+  - mongodb
+  env:
+  - MYENV = "dev"
+  script: []
+build:
+  image:
+    dockerfile_path: /Dockerfile
+    build_dir: /
+    cache: true
