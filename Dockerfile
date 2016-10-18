@@ -7,4 +7,4 @@ COPY . /usr/src/app
 
 EXPOSE 80
 
-CMD node bin/www
+CMD npm init
