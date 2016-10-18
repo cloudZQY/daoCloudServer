@@ -7,4 +7,4 @@ COPY . /usr/src/app
 
 EXPOSE 80
 
-ENTRYPOINT ["NODE", "bin/www"]
+ENTRYPOINT ["npm", "start"]
