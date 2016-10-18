@@ -1,4 +1,4 @@
-FROM node:0.12.7-wheezy
+FROM node:6.3.1
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY package.json /usr/src/app/
